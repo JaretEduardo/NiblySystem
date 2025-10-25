@@ -27,6 +27,7 @@ return new class extends Migration
             $table->decimal('unit_cost', 8, 2);
             $table->text('crew_feedback')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

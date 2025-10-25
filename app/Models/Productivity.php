@@ -4,8 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Productivity extends Model
 {
-    use HasFactory;
+     use HasFactory, SoftDeletes;
+    protected $fillable = [
+        'Drawer_ID',
+        'Flight_Type',
+        'Drawer_Category',
+        'Total_Items',
+        'Unique_Item_Types',
+        'Item_List'
+    ];
 }

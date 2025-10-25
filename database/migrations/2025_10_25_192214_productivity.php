@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('Unique_Item_Types');
             $table->text('Item_List'); // Lista larga de items (ej. JSON o CSV)
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->date('Expiry_Date');
             $table->integer('Quantity');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
