@@ -14,7 +14,7 @@ class Productivity extends Seeder
      */
     public function run(): void
     {
-        DB::table('productivities')->insert([
+        DB::table('productivity')->insert([
             [
                 'Drawer_ID' => 'DRW_001',
                 'Flight_Type' => 'Business',

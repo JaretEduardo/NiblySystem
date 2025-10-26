@@ -13,7 +13,7 @@ class Consumption extends Seeder
      */
     public function run(): void
     {
-        DB::table()->insert([
+        DB::table("flight_consumptions")->insert([
             [
                 'flight_id' => 'AM109',
                 'origin' => 'DOH',
