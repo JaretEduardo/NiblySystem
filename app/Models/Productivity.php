@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Productivity extends Model
 {
      use HasFactory, SoftDeletes;
+         protected $table = 'productivity';
+
     protected $fillable = [
         'Drawer_ID',
         'Flight_Type',
