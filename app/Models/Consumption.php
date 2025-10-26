@@ -10,6 +10,7 @@ class Consumption extends Model
 {
 
     use HasFactory, SoftDeletes;
+    protected $table = 'flight_consumptions';
     protected $fillable = [
         'flight_id',
         'origin',
