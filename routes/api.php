@@ -35,6 +35,7 @@ Route::prefix('product')->controller(ProductContrller::class)->group(function() 
     Route::get('/', "index");
     Route::get('/{id}', "search")->where("id","[0-9]+");
     Route::delete('/{id}', "destroy")->where("id","[0-9]+");
+    Route::get('count', "countExpire");
 });
 
 Route::prefix('consumption')->controller(ConsumtionController::class)->group(function() {
